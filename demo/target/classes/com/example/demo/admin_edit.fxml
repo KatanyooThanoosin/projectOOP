@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1280.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.adminEditController">
+   <children>
+      <ImageView fitHeight="206.0" fitWidth="242.0" layoutX="66.0" layoutY="64.0" pickOnBounds="true">
+         <image>
+            <Image url="@unknown.jpg" />
+         </image></ImageView>
+      <Label fx:id="usernameLabel" alignment="CENTER" layoutX="56.0" layoutY="281.0" prefHeight="45.0" prefWidth="261.0" text="Name">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <HBox layoutX="74.0" layoutY="344.0" prefHeight="410.0" prefWidth="932.0">
+         <children>
+            <VBox prefHeight="410.0" prefWidth="212.0">
+               <children>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="98.0" layoutY="35.0" prefHeight="27.0" prefWidth="103.0" text="1st Dose :">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="90.0" layoutY="73.0" text="2nd Dose :">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="94.0" layoutY="110.0" text="3rd Dose :">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="93.0" layoutY="148.0" prefHeight="27.0" prefWidth="105.0" text="4th Dose :">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+            <Pane prefHeight="410.0" prefWidth="582.0">
+               <children>
+                  <Button layoutX="339.0" layoutY="314.0" mnemonicParsing="false" onAction="#cancelButtonAction" prefHeight="51.0" prefWidth="201.0" style="-fx-background-color: #e06588; -fx-background-radius: 0;" text="Cancel" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="102.0" layoutY="314.0" mnemonicParsing="false" onAction="#finishButtonAction" prefHeight="51.0" prefWidth="201.0" style="-fx-background-color: #8b6464; -fx-background-radius: 0;" text="Finish" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Label alignment="CENTER" layoutX="102.0" layoutY="245.0" prefHeight="35.0" prefWidth="442.0" textFill="RED">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="firstDose" layoutX="14.0" layoutY="40.0" prefHeight="25.0" prefWidth="338.0" />
+                  <ChoiceBox fx:id="secondDose" layoutX="14.0" layoutY="78.0" prefHeight="25.0" prefWidth="338.0" />
+                  <ChoiceBox fx:id="thirdDose" layoutX="14.0" layoutY="114.0" prefHeight="25.0" prefWidth="338.0" />
+                  <ChoiceBox fx:id="forthDose" layoutX="14.0" layoutY="154.0" prefHeight="25.0" prefWidth="338.0" />
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+      <Line endX="306.0" endY="106.57359313964844" layoutX="997.0" layoutY="37.0" startX="116.786865234375" startY="-80.21320343017578" stroke="#d6839a" strokeWidth="30.0" />
+      <Line endX="308.0" endY="178.57359313964844" layoutX="1007.0" layoutY="47.0" startX="72.0" startY="-58.42640686035156" stroke="#f299b2" strokeWidth="30.0" />
+      <ImageView fitHeight="352.0" fitWidth="361.0" layoutX="818.0" layoutY="263.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icon.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="-7.0" layoutY="753.0" prefHeight="18.0" prefWidth="1288.0" style="-fx-background-color: #d6839a;" />
+   </children>
+</Pane>

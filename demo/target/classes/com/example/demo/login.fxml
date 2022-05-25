@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1280.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.loginSceneController">
+   <children>
+      <Pane prefHeight="118.0" prefWidth="1024.0" style="-fx-background-color: #d6839a;">
+         <children>
+            <Pane layoutX="225.0" layoutY="17.0" prefHeight="83.0" prefWidth="87.0" style="-fx-rotate: 45; -fx-background-color: #e06588;" />
+            <Pane layoutX="266.0" prefHeight="118.0" prefWidth="1014.0" style="-fx-background-color: #e06588;">
+               <children>
+                  <Label layoutX="187.0" layoutY="14.0" prefHeight="90.0" prefWidth="411.0" text="Vaccination Certificate">
+                     <font>
+                        <Font name="Angsana New" size="64.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane layoutY="663.0" prefHeight="105.0" prefWidth="1280.0" style="-fx-background-color: #d6839a;">
+         <children>
+            <Pane layoutY="26.0" prefHeight="81.0" prefWidth="1280.0" style="-fx-background-color: #e06588;" />
+         </children></Pane>
+      <Label layoutX="176.0" layoutY="187.0" prefHeight="55.0" prefWidth="173.0" text="Username">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Label>
+      <Label layoutX="183.0" layoutY="320.0" text="Password">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Label>
+      <Button layoutX="537.0" layoutY="466.0" mnemonicParsing="false" onAction="#switchToInfoScene" prefHeight="43.0" prefWidth="208.0" style="-fx-background-color: #e06588;" text="Login">
+         <font>
+            <Font size="30.0" />
+         </font></Button>
+      <Button layoutX="580.0" layoutY="566.0" mnemonicParsing="false" onAction="#switchToRegisterScene" prefHeight="43.0" prefWidth="120.0" style="-fx-background-color: #c2c0c0;" text="Register">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <TextField fx:id="username" layoutX="362.0" layoutY="174.0" prefHeight="81.0" prefWidth="627.0" style="-fx-background-color: #c2c0c0;">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="password" layoutX="362.0" layoutY="312.0" prefHeight="74.0" prefWidth="627.0" style="-fx-background-color: #c2c0c0;">
+         <font>
+            <Font size="24.0" />
+         </font></PasswordField>
+      <Label fx:id="failedLoginLabel" alignment="CENTER" layoutX="243.0" layoutY="411.0" prefHeight="35.0" prefWidth="799.0" textFill="RED">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
